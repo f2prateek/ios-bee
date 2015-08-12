@@ -14,11 +14,10 @@ class ViewController: UIViewController {
       .toSignalProducer()
       |> skip(1) // Skip first
       |> map { text in text as! String }
-      |> map { text in Bee.spell(text) }
       |> throttle(0.5, onScheduler: QueueScheduler.mainQueueScheduler)
     
     input.start(next: { text in
-      self.display.text = text
+      self.display.text = Bee.spell(text)
     })
   }
 

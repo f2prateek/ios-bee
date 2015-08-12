@@ -19,7 +19,7 @@ PODS:
     - Box (~> 1.2)
 
 DEPENDENCIES:
-  - ReactiveCocoa (= 3.0-RC.1)
+  - ReactiveCocoa (~> 3.0-RC.1)
 
 SPEC CHECKSUMS:
   Box: a92e8aa4c099e6bc0733829665caf9e668ef53b8

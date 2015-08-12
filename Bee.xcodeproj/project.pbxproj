@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E1796481B7B495B005EE8ED /* Bee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1796471B7B495B005EE8ED /* Bee.swift */; };
 		6ED4864B1B7B47BE006A3997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4864A1B7B47BE006A3997 /* AppDelegate.swift */; };
 		6ED4864D1B7B47BE006A3997 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4864C1B7B47BE006A3997 /* ViewController.swift */; };
 		6ED486501B7B47BE006A3997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ED4864E1B7B47BE006A3997 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		28A522036757BC2CFBBE08CB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		47221782AAB1A8B77E1024ED /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1796471B7B495B005EE8ED /* Bee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bee.swift; sourceTree = "<group>"; };
 		6ED486451B7B47BE006A3997 /* Bee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED486491B7B47BE006A3997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6ED4864A1B7B47BE006A3997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				6ED4864A1B7B47BE006A3997 /* AppDelegate.swift */,
 				6ED4864C1B7B47BE006A3997 /* ViewController.swift */,
 				6ED4864E1B7B47BE006A3997 /* Main.storyboard */,
+				6E1796471B7B495B005EE8ED /* Bee.swift */,
 				6ED486511B7B47BE006A3997 /* Images.xcassets */,
 				6ED486531B7B47BE006A3997 /* LaunchScreen.xib */,
 				6ED486481B7B47BE006A3997 /* Supporting Files */,
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ED4864D1B7B47BE006A3997 /* ViewController.swift in Sources */,
+				6E1796481B7B495B005EE8ED /* Bee.swift in Sources */,
 				6ED4864B1B7B47BE006A3997 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

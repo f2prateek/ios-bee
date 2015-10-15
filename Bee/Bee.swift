@@ -43,20 +43,31 @@ public class Bee {
 
   public static func spell(text: String) -> String {
     var spelt = ""
-    for char in text.lowercaseString {
-      var a:String?
 
-      if char == " " {
-        a = "\n"
-      } else {
+    var addSpace = true
+    for char in text.lowercaseString {
+        if char == " " {
+            if count(spelt) > 0 {
+                spelt = spelt + "\n"
+                addSpace = false
+            }
+            continue
+        }
+
+        if count(spelt) > 0 && addSpace {
+            spelt = spelt + " "
+        }
+        addSpace = true
+
+        var a:String?
         a = Bee.Table[char]
         if a == nil {
             a = String(char)
         }
-      }
 
-      spelt = spelt + " " + a!
+        spelt = spelt + a!
     }
+
     return spelt
   }
 }

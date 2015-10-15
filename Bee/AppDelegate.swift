@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Bee
-//
-//  Created by Prateek Srivastava on 2015-08-12.
-//  Copyright (c) 2015 f2prateek. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

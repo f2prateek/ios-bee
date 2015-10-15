@@ -1,35 +1,35 @@
-//
-//  BeeTests.swift
-//  BeeTests
-//
-//  Created by Prateek Srivastava on 2015-08-12.
-//  Copyright (c) 2015 f2prateek. All rights reserved.
-//
-
 import UIKit
 import XCTest
 
 class BeeTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testCharacters() {
+        assertEqual("abcdef", expected: " Alfa Bravo Charlie Delta Echo Foxtrot")
+        assertEqual("ghijkl", expected: " Golf Hotel India Juliett Kilo Lima")
+        assertEqual("mnopqr", expected: " Mike November Oscar Papa Quebec Romeo")
+        assertEqual("stuvw", expected: " Sierra Tango Uniform Victor Whiskey")
+        assertEqual("xyz", expected: " X-ray Yankee Zulu")
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testDigits() {
+        assertEqual("1234567890", expected: " One Two Three Four Five Six Seven Eight Nine Zero")
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testUnknown() {
+        assertEqual(",./", expected:" , . /");
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
+    func assertEqual(input: String, expected: String) {
+        let got = Bee.spell(input)
+        XCTAssertEqual(got, expected, String(format: "expected %s but got %s", expected, got))
+    }
+    
+    func testPerformance() {
         self.measureBlock() {
-            // Put the code you want to measure the time of here.
+            Bee.spell("abcdefghijklmnopqrstuvwxyz")
+            Bee.spell("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+            Bee.spell("1234567890")
+            Bee.spell(",./ ")
         }
     }
     

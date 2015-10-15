@@ -1,6 +1,6 @@
 import Foundation
 
-class Bee {
+public class Bee {
   
   static let Table: [Character:String] = [
     "a": "Alfa",
@@ -41,7 +41,7 @@ class Bee {
     "0": "Zero"
   ]
 
-  static func spell(text: String) -> String {
+  public static func spell(text: String) -> String {
     var spelt = ""
     for char in text.lowercaseString {
       var a:String?

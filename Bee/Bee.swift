@@ -43,12 +43,18 @@ class Bee {
 
   static func spell(text: String) -> String {
     var spelt = ""
-    for char in text {
+    for char in text.lowercaseString {
       var a:String?
-      a = Bee.Table[char]
-      if a == nil {
-        a = " "
+
+      if char == " " {
+        a = "\n"
+      } else {
+        a = Bee.Table[char]
+        if a == nil {
+            a = String(char)
+        }
       }
+
       spelt = spelt + " " + a!
     }
     return spelt

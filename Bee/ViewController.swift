@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     let input = editor
       .rac_textSignal()
       .toSignalProducer()
-      |> skip(1) // Skip first
+      |> skip(1) // Skip first empty string ""
       |> map { text in text as! String }
       |> throttle(0.5, onScheduler: QueueScheduler.mainQueueScheduler)
     

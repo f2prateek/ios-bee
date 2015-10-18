@@ -70,4 +70,8 @@ public class Bee {
 
     return spelt
   }
+
+  private init() {
+    NSException(name: "Assertion", reason: "No instances allowed.", userInfo: nil).raise()
+  }
 }

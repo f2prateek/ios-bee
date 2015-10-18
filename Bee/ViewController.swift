@@ -9,25 +9,22 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    let animation = CATransition()
+    animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+    animation.type = kCATransitionFade
+    animation.duration = 0.5
+
     let input = editor
-    .rac_textSignal()
-    .toSignalProducer()
+        .rac_textSignal()
+        .toSignalProducer()
         |> skip(1) // Skip first empty string ""
-        |> map {
-            text in text as! String
-        }
-        |> map { text in
-            return self.trim(text)
-        }
+        |> map { text in text as! String }
+        |> map { text in return text.trim() }
         |> throttle(0.5, onScheduler: QueueScheduler.mainQueueScheduler)
         |> observeOn(UIScheduler())
         |> start { text in
+            self.display.layer.addAnimation(animation, forKey:"kCATransitionFade")
             self.display.text = Bee.spell(text)
         }
   }
-
-  private func trim(text: String) -> String {
-    return text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
-  }
 }
-

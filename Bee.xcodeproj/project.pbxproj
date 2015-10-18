@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6E12D4DE1BCF6647009447E1 /* Bee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1796471B7B495B005EE8ED /* Bee.swift */; };
 		6E1796481B7B495B005EE8ED /* Bee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1796471B7B495B005EE8ED /* Bee.swift */; };
+		6EA0CB501BD446A300944548 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA0CB4F1BD446A300944548 /* Strings.swift */; };
 		6ED4864B1B7B47BE006A3997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4864A1B7B47BE006A3997 /* AppDelegate.swift */; };
 		6ED4864D1B7B47BE006A3997 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4864C1B7B47BE006A3997 /* ViewController.swift */; };
 		6ED486501B7B47BE006A3997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ED4864E1B7B47BE006A3997 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		28A522036757BC2CFBBE08CB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		47221782AAB1A8B77E1024ED /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E1796471B7B495B005EE8ED /* Bee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bee.swift; sourceTree = "<group>"; };
+		6EA0CB4F1BD446A300944548 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		6ED486451B7B47BE006A3997 /* Bee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED486491B7B47BE006A3997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6ED4864A1B7B47BE006A3997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				6ED4864A1B7B47BE006A3997 /* AppDelegate.swift */,
+				6EA0CB4F1BD446A300944548 /* Strings.swift */,
 				6ED4864C1B7B47BE006A3997 /* ViewController.swift */,
 				6ED4864E1B7B47BE006A3997 /* Main.storyboard */,
 				6E1796471B7B495B005EE8ED /* Bee.swift */,
@@ -294,6 +297,7 @@
 			files = (
 				6ED4864D1B7B47BE006A3997 /* ViewController.swift in Sources */,
 				6E1796481B7B495B005EE8ED /* Bee.swift in Sources */,
+				6EA0CB501BD446A300944548 /* Strings.swift in Sources */,
 				6ED4864B1B7B47BE006A3997 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

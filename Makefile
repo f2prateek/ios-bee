@@ -17,5 +17,11 @@ build:
 test:
 	xcodebuild $(XC_ARGS) test | $(XCPRETTY)
 
+xcbuild:
+	xctool $(XC_ARGS)
+
+xctest:
+	xctool $(XC_ARGS) test
+
 .PHONY: test build clean
 .SILENT:
